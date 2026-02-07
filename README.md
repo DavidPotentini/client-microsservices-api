@@ -74,13 +74,18 @@ A comunicação utiliza os **nomes dos containers** definidos no `docker-compose
 - `DB_PASSWORD=root`
 
 ## Como Executar
-
 1.  Execute na raiz:
     ```bash
     docker-compose up --build
     ```
 
 ## Testes
+1. Execute na pasta do teste que deseja executar:
+
+```bash
+npm install --save-dev jest supertest  
+``` 
+
 ```bash
 npm test
 ```
