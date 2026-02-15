@@ -12,7 +12,7 @@ on:
 
 env:
   SERVICE_NAME: auth-service
-  AWS_REGION: ${{ secrets.AWS_REGION }}
+  AWS_REGION: us-east-1
   ECR_REPOSITORY: seu-nome-de-usuario/auth-service # Substitua pelo nome do seu repositório ECR
   ECS_CLUSTER: seu-cluster-ecs # Substitua pelo nome do seu cluster ECS
   ECS_SERVICE: seu-servico-auth # Substitua pelo nome do seu serviço ECS para auth-service

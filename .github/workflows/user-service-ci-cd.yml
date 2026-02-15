@@ -12,7 +12,7 @@ on:
 
 env:
   SERVICE_NAME: user-service-ci-cd
-  AWS_REGION: ${{ secrets.AWS_REGION }}
+  AWS_REGION: us-east-1
   ECR_REPOSITORY: seu-nome-de-usuario/user-service # Nome do repositório no ECR
   ECS_CLUSTER: seu-cluster-ecs                   # Nome do seu cluster
   ECS_SERVICE: seu-servico-user                  # Nome do serviço ECS para User
