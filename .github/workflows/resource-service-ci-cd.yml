@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
 
 env:
-  SERVICE_NAME: resource-service/**
+  SERVICE_NAME: resource-service
   AWS_REGION: us-east-1
   ECR_REPOSITORY: resource-service
   ECS_CLUSTER: seu-cluster-ecs                        # Nome do seu cluster
