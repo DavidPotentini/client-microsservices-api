@@ -2,6 +2,11 @@ const express = require("express");
 const clientController = require("./controllers/clientController");
 const app = express();
 const errorHandler = require("./middleware");
+
+app.get('/', (req, res) => {
+  res.status(200).send('OK');
+});
+
 app.use(express.json());
 
 app.post("/clients", clientController.create);

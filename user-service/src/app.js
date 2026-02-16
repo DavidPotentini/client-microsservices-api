@@ -2,6 +2,9 @@ const express = require("express");
 const userController = require("./controllers/userController");
 const app = express();
 const errorHandler = require("./middleware");
+app.get('/', (req, res) => {
+  res.status(200).send('OK');
+});
 app.use(express.json());
 
 app.get("/users", userController.findAll);
