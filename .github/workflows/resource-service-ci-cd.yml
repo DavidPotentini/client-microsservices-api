@@ -4,14 +4,15 @@ on:
   push:
     branches: [ main ]
     paths:
-      - 'resource-service-ci-cd/**' # Monitora apenas esta pasta
+      - 'resource-service/**' 
   pull_request:
     branches: [ main ]
     paths:
-      - 'resource-service-ci-cd/**'
+      - 'resource-service/**' 
+  workflow_dispatch:
 
 env:
-  SERVICE_NAME: resource-service-ci-cd
+  SERVICE_NAME: resource-service/**
   AWS_REGION: us-east-1
   ECR_REPOSITORY: resource-service
   ECS_CLUSTER: seu-cluster-ecs                        # Nome do seu cluster

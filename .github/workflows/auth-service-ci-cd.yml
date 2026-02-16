@@ -4,11 +4,12 @@ on:
   push:
     branches: [ main ]
     paths:
-      - 'auth-service/**'
+      - 'auth-service/**' 
   pull_request:
     branches: [ main ]
     paths:
-      - 'auth-service/**'
+      - 'auth-service/**' 
+  workflow_dispatch:
 
 env:
   SERVICE_NAME: auth-service
