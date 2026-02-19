@@ -67,7 +67,7 @@ jobs:
 
       - name: Baixar Task Definition atual
         run: |
-          aws ecs describe-task-definition --task-definition auth-task --query taskDefinition | jq 'del(.compatibilities, .taskDefinitionArn, .requiresAttributes, .revision, .status, .registeredAt, .registeredBy, .enableFaultInjection)' > ${{ github.workspace }}/task-definition.json
+          aws ecs describe-task-definition --task-definition resource-task --query taskDefinition | jq 'del(.compatibilities, .taskDefinitionArn, .requiresAttributes, .revision, .status, .registeredAt, .registeredBy, .enableFaultInjection)' > ${{ github.workspace }}/task-definition.json
 
       - name: Renderizar nova imagem na Task Definition
         id: render-task-def
