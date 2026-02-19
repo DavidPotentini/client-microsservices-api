@@ -17,9 +17,9 @@ env:
   ECR_REPOSITORY: resource-service
   ECS_CLUSTER: microservices-cluster
   ECS_SERVICE: resource-service
-  ECS_TASK_DEFINITION: resource-task 
+  ECS_TASK_DEFINITION: resource-task
   CONTAINER_NAME: resource-container
-
+  
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
