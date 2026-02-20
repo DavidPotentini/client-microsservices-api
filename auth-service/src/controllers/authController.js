@@ -23,7 +23,7 @@ module.exports = {
       // Validação prévia para evitar salto de ID no banco
       const existingUser = await User.findOne({ where: { email } });
       if (existingUser) {
-        return res.status(400).json({ error: "Email já cadastrado!!" });
+        return res.status(400).json({ error: "Email já cadastrado!!!!!" });
       }
 
       const user = await User.create(req.body);
